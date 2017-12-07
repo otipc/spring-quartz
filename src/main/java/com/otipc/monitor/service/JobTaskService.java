@@ -69,7 +69,7 @@ public class JobTaskService {
 
         Scheduler scheduler = schedulerFactoryBean.getScheduler();
 
-        log.info(scheduler + ".......................................................................................add");
+        log.debug(scheduler + ".......................................................................................add");
 
         TriggerKey triggerKey = TriggerKey.triggerKey(job.getJobName(), job.getJobGroup());
 
